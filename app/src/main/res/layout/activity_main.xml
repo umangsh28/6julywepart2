@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/tname"
+        android:layout_width="271dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="84dp"
+        android:hint="FirstName"
+        app:layout_constraintBottom_toTopOf="@id/tlast"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/tlast"
+        android:layout_width="264dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="6dp"
+        android:hint="LastName"
+        app:layout_constraintBottom_toTopOf="@id/tmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tname" />
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="240dp"
+        android:layout_height="81dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="84dp"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tnum" />
+
+    <EditText
+        android:id="@+id/tmail"
+        android:layout_width="269dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="6dp"
+        android:hint="Email"
+        app:layout_constraintBottom_toTopOf="@id/tnum"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tlast" />
+
+    <EditText
+        android:id="@+id/tnum"
+        android:layout_width="263dp"
+        android:layout_height="63dp"
+        android:hint="phone number"
+        app:layout_constraintBottom_toTopOf="@+id/btn1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tmail"
+        app:layout_constraintVertical_bias="0.309" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
